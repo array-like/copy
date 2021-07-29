@@ -4,12 +4,18 @@
 ArrayLike copying for JavaScript.
 See [docs](https://array-like.github.io/copy/index.html).
 
-> :building_construction: Caveat emptor! This is work in progress. Code may be
-> working. Documentation may be present. Coherence may be. Maybe.
+```js
+import {range} from '@iterable-iterator/range';
+const n = 100;
+const a = Array.from(range(n))
+const ai = 0;
+const aj = n;
+const b = new Uint8Array(n);
+const bi = 0;
 
-> :warning: Depending on your environment, the code may require
-> `regeneratorRuntime` to be defined, for instance by importing
-> [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
+import {copy} from '@array-like/copy';
+copy(a, ai, aj, b, bi);
+```
 
 [![License](https://img.shields.io/github/license/array-like/copy.svg)](https://raw.githubusercontent.com/array-like/copy/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@array-like/copy.svg)](https://www.npmjs.org/package/@array-like/copy)
