@@ -2,7 +2,7 @@ import test from 'ava';
 
 import {randint} from '@randomized/random';
 
-import {copy} from '../../src/index.js';
+import {copy} from '#module';
 
 function one(Constructor) {
 	test(`copy (${Constructor})`, (t) => {
